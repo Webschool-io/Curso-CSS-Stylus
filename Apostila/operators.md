@@ -159,3 +159,133 @@ O operador de expoente `**`:
 2 ** 8
 // => 256
 ```
+
+### Igualdade e Relacional == != >= <= > <
+
+Os operadores de igualdade servem para comparar unidades, cores e strings.
+
+```
+6 == 6
+// => true
+
+100 > 10
+// => true
+
+#fff == #fff
+// => true
+
+"webschool" == "webschool"
+// => true
+
+true is true
+// => true
+
+"metallica" is not "megadeth"
+// => true
+
+"metallica" isnt "megadeth"
+// => true
+
+(1 2 3) == (1 2 3)
+// => true
+
+(8 9 0) == (2 3 4)
+// => false
+```
+
+Importante ressaltar que é apenas para valores exatos. Por exemplo, `0 == false` e `null == false` é `false`.
+
+Alguns operadores tem a mesma função porém podem ser chamado de formas diferentes:
+
+```
+==         is
+!=         is not
+!=         isnt
+```
+
+### Operadores Lógicos && || and or
+
+Os operadores lógicos `&&`e `||` são a mesma coisa que `and` e `or`.
+
+```
+5 && 3
+// => 3
+
+0 || 5
+// => 5
+
+0 and 5
+// => 0
+```
+
+### Operador de existência in
+
+Verifica a existência do operando esquerdo dentro da expressão do lado direito.
+
+```
+nums = 3 9 4 2
+
+3 in nums
+// => true
+
+5 in nums
+// => false
+```
+
+Você também pode usar em mixins:
+
+```
+pad(types = padding, n = 5px)
+	if padding in types
+		padding n
+	if margin in types
+		margin n
+```
+
+### Atribuição condicional ?= :=
+
+Os operadores de atribuição condicional, nos permite definir variáveis, sem sobrepor valores antigos (caso houver).
+
+Por exemplo, a seguir são equivalentes:
+
+```
+color ?= #fff
+color := #fff
+color = color is defined ? color : #fff
+```
+
+Quando usamos apenas `=`, ele sobrepõe o valor anterior:
+
+```
+color = #fff
+color = #000
+
+color
+// => #000
+```
+
+Mas se usamos os operadores de atribuição condicional, fica desta forma:
+
+```
+color = #fff
+color ?= #000
+
+color
+// => #000
+```
+
+### Istance Check is a
+
+Com o Stylus podemos usar um operador istance check para verificar o tipo.
+
+```
+2 is a 'unit'
+// => true
+
+#fff is a 'rgba'
+// => true
+
+30 is a 'rgba'
+// => false
+```
+
