@@ -289,3 +289,114 @@ Com o Stylus podemos usar um operador istance check para verificar o tipo.
 // => false
 ```
 
+### Definição de váriavel is defined
+
+Com o operador `is defined` você consegue verificar se existe um valor definido para uma váriavel;
+
+```
+foo is defined
+// => false
+
+foo = 20px
+foo is defined
+// => true
+
+#fff is defined
+// => error
+```
+
+### Ternário
+
+O operador ternário funciona igual na maioria das linguagens, aonde a condição irá resultar em true ou false.
+
+```
+foo == 20 ? 40 : 80
+```
+
+### Color Operations
+
+Todas as operações aritméticas são suportadas para valores de cor (hexadecimal, rgb e rgba), onde trabalham por partes.
+
+Exemplos:
+
+Adição
+
+```
+p
+	color #010203 + #040506
+```
+
+01 + 04 = 05, 02 + 05 = 07, 03 + 06 = 09
+
+Será compilado para:
+
+```
+p {
+	color: #050709;
+}
+```
+
+Multiplicação
+
+```
+p
+	color #010203 * 2
+```
+
+01 * 2 = 02, 02 * 2 = 04, and 03 * 2 = 06
+
+Será compilado para:
+
+```
+p {
+	color: #020406;
+}
+```
+
+RGBA
+
+```
+p
+	color rgba(255, 0, 0, 0.20) + rgba(0, 255, 0, 0.75);
+```
+Será compilado para:
+
+```
+p {
+	color: rgba(255,255,0,0.95);
+}
+```
+* Observe que as cores em RGB e RGBA devem ter o mesmo valor de alfa para que a as operações sejam realizadas com eles
+* Muitas vezes é mais útil para usar as funções de cor do que tentar operações de cor para conseguir alguns efeitos.
+
+### Sprintf 
+
+O operador de sprintf é usado para gerar um valor passando argumentos para ele.
+
+```
+p
+	color 'rgba(255, %s, 255, 1)' % 20
+```
+
+O que será compilado para:
+
+```
+p {
+	color: rgba(255, 20, 255, 1);
+}
+```
+
+Mas para múltiplos valores, deve ser passado entre parênteses, ficando assim:
+
+```
+p
+	color 'rgba(%s, %s, %s, 1)' % (50 60 70)
+```
+
+Compilado fica assim:
+
+```
+p {
+	color: rgba(50, 60, 70, 1);
+}
+```
