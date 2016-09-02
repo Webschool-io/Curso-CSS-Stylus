@@ -154,3 +154,20 @@ lightness(red)
 
 ### Funções com string
 
+#### typeof(node)
+
+Retorna o tipo da string. Esta função também tem duas alternativas: `type` e `type-of`.
+
+```
+type(12)
+// => 'unit'
+
+typeof(12)
+// => 'unit'
+
+typeof(#fff)
+// => 'rgba'
+
+type-of(#fff)
+// => 'rgba'
+```
