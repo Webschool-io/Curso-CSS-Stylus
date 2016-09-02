@@ -152,7 +152,7 @@ lightness(red)
 // => red
 ```
 
-### Funções com string
+### Funções com string e números
 
 #### typeof(node)
 
@@ -171,3 +171,22 @@ typeof(#fff)
 type-of(#fff)
 // => 'rgba'
 ```
+
+#### unit(unit[, type])
+
+Caso o valor `type` não seja argumentado, retorna o tipo da unidade, se ele for argumentado, retorna a unidade com o tipo desejado.
+
+```
+unit(10)
+// => ''
+
+unit(15in)
+// => 'in'
+
+unit(15%, 'px')
+// => 15px
+
+unit(15%, px)
+// => 15px
+```
+
