@@ -269,7 +269,7 @@ Que compilado é:
 }
 ```
 
-# Referência inicial
+## Referência inicial
 
 Com o `~/` no inicio de um seletor pode ser utilizado para apontar para o primeiro nível do seletor, que pode ser um atalho para `^[0]`. O único problema é que você pode usar `~/`apenas no início de um seletor.
 
