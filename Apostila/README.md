@@ -1,93 +1,27 @@
-#Apostila CSS-Stylus
+#Apostila Stylus
 
-## selectors
+## Índice
 
-[Conteúdo de selectors](./selectors.md)
-* Identation
-* Rule Sets
-* Parent Reference
-* Partial Reference
-* Ranges in partial references
-* Relative Reference
-* Root Reference
-* selector() bif
-* Multiple values for `selector()` bif
-* selectors() bif
-* Disambiguation
-## pseudo-elements
-
-[Conteúdo de selectors](./pseudo-elements.md)
-
-## variables
-
-[Conteúdo de selectors](./variables.md)
-
-## interpolation
-
-[Conteúdo de selectors](./interpolation.md)
-
-## operators
-
-[Conteúdo de selectors](./operators.md)
-* Operator Precedence
-* Unary Operators
-* Binary Operators
-* Range
-* Additive: `+ -`
-* Multiplicative `/ * %`
-* Exponent
-* Equality & Relation
-* Truthfulness
-* Logical Operators
-* Existence Operator
-* Conditional Assignmen
-* Instance Check
-* Variable Definition
-* Ternary
-* Casting
-* Color Operations
-* Sprintf
-
-## extend
-
-[Conteúdo de selectors](./extend.md)
-
-## mixins
-
-[Conteúdo de selectors](./mixins.md)
-
-## functions
-
-[Conteúdo de selectors](./functions.md)
-* Return Values
-* Argument Defaults
-* Named Parameters
-* Function Bodies
-* Multiple Return Values
-* Conditionals
-* Aliasing
-* Variable Functions
-* Anonymous functions
-* arguments
-* Hash
-
-## placeholders
-
-[Conteúdo de selectors](./placeholders.md)
-
-## conditionals
-
-[Conteúdo de selectors](./conditionals.md)
-
-## media queries
-
-[Conteúdo de selectors](./media-queries.md)
-* Media Query Bubbling
-* Nested media queries
-* Interpolations and variables
-
-## iteration
-
-[Conteúdo de selectors](./iteration.md)
-* Functions
-* Postfix
+- [Introdução](about.md)
+	- [Instalação](about.md#instalação)
+- [Comentários](comments.md)
+- [Seletores](selectors.md)
+	- [Seletores Aninhados](selectors.md#seletores-aninhados)
+	- [Conjuntos de regras](selectors.md#conjuntos-de-regras)
+	- [Referência pai](selectors.md#referência-pai)
+	- [Referência parcial](selectors.md#referência-parcial)
+	- [Referência inicial](selectors.md##referência-inicial)
+- [Variáveis](variables.md)
+- [Hashes](hashes.md)
+- [Interpolação](interpolation.md)
+- [@extend](extend.md)
+- [Operadores](operators.md)
+	- [Operadores Unários](operators.md#operadores-unários)
+	- [Operadores Binários](operators.md#operadores-binários)
+- [Mixins](mixins.md)
+- [Funções](functions.md)
+- [Placeholders](placeholders.md)
+- [Condições](conditions.md)
+- [Iteração](iteration.md)
+- [Media Queries](media-queries.md)
+- [@import e @require](import.md)
