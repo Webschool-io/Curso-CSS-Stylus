@@ -2,7 +2,7 @@
 
 Através da diretiva `@import` é possível importar arquivos no seu arquivo principal. Durante o processo de compilação os arquivos importados são unificados gerando um único arquivo CSS. Todas as variáveis ou mixins definidas nos arquivos importados podem ser usados no arquivo principal.
 
-*Observação: Em quase todos os casos de uso do @import pode ser usado o @require*
+*Observação: Em todos os casos de uso do @import pode ser usado o @require*
 
 Sintaxe:
 
