@@ -29,3 +29,40 @@ Você também pode incluir todos os arquivos de uma pasta usando o caractere `*`
 ```
 @import 'partials/*'
 ```
+
+## @import em níveis
+
+Com o Stylus, podemos incluir um arquivo dentro de algum bloco. Suponhamos que você tenha um arquivo `nav.styl` e ele tenha esse conteúdo:
+
+```
+ul
+	list-style none
+	padding 0
+	margin 0
+	width 100%
+	text-align center
+	li
+		display inline-block
+```
+
+Se você quiser incluir ele dentro de um bloco, fica deste modo:
+
+```
+nav
+	@import 'nav.styl'
+```
+
+Aonde será compilado para:
+
+```
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+}
+nav ul li {
+	display: inline-block;
+}
+```
