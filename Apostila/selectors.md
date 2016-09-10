@@ -168,7 +168,7 @@ main#foo section.bar div.baz {
 
 ## Referência parcial
 
-Em qualquer lugar de um seletor, podemos usar `^ [N]`, onde `N` pode ser um número, representa uma ferência parcial.
+Em qualquer lugar de um seletor, podemos usar `^ [N]`, onde `N` pode ser um número, representa uma referência parcial.
 
 Refêrencia parcial é semelhante à referência pai, só que a referência pai contém o seletor todo, já a referência parcial contem apenas o seletor a partir do seu `N`.
 
