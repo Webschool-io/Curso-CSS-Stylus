@@ -5,6 +5,8 @@ Stylus é um pré-processador que estende e adiciona diversos recursos ao CSS, c
 
 Neste curso serão abordados conceitos e funcionalidades do Stylus.
 
+**Slide:** [goo.gl/WJ6b65](goo.gl/WJ6b65)
+
 ## O Professor
 
 Marcos Felipe Nalin Furtado, graduando em Banco de Dados na FATEC de Bauru, Full Stack Web Developer há cerca de 4 anos. Um apaixonado por Open Source e busca sempre contribuir com a comunidade o máximo que puder. Atualmente é instrutor na Webschool em alguns cursos e trabalha como freelancer.
